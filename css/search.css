@@ -1,0 +1,34 @@
+/* 페이지 번호 입력 */
+#page-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#page-search input[type="number"] {
+    padding: 3px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 120px;
+    font-size: 1rem;
+}
+
+#page-search button {
+    padding: 3px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#page-search button:hover {
+    background-color: #555;
+}
+
+/* 푸터 내 아이템 간격 설정 */
+#footer .pagination,
+#footer #page-search {
+    gap: 15px;
+}

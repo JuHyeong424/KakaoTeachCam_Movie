@@ -1,0 +1,115 @@
+/* 헤더 전체 스타일 */
+header {
+    background: linear-gradient(90deg, #1f1f1f 0%, #2c2c2c 100%);
+    color: white;
+    padding: 24px 40px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 컨테이너 정렬 */
+header .container > .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* 요소 간 간격 추가 */
+}
+
+/* 네비게이션 */
+header ul.nav {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+header ul.nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+header ul.nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 검색 폼 */
+header form[role="search"] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+header input[type="search"] {
+    padding: 8px 12px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 180px;
+    font-size: 0.95rem;
+}
+header .search-btn {
+    padding: 8px 14px;
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+header .search-btn:hover {
+    background-color: #ec971f;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 20px;
+    }
+
+    header .container > .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    header ul.nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header form[role="search"] {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header input[type="search"] {
+        width: 100%;
+    }
+
+    header .search-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    header ul.nav a {
+        font-size: 0.95rem;
+        padding: 6px 10px;
+    }
+
+    header input[type="search"] {
+        font-size: 0.9rem;
+    }
+
+    header .search-btn {
+        font-size: 0.9rem;
+    }
+}

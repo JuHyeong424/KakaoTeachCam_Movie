@@ -1,0 +1,52 @@
+/* 푸터 스타일 */
+#footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 페이지네비게이션 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.page-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.page-link {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s;
+}
+
+.page-link:hover {
+    background-color: #e0e0e0;
+}
+
+.page-item.active .page-link {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.page-item-prev, .page-item-next {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.page-item-prev:hover, .page-item-next:hover {
+    background-color: #ddd;
+}

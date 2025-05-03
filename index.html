@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/cardLayout.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+<!-- modal -->
+<div id="custom-modal" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="custom-close-btn">&#10006;</span>
+        <img id="custom-modal-img" src = "" alt="movie image">
+        <h2 id="custom-modal-title">title</h2>
+        <p id="custom-modal-genres">genres</p>
+        <p id="custom-modal-homepage">homepage</p>
+        <p id="custom-modal-runtime">runtime</p>
+        <p id="custom-modal-vote">rate</p>
+        <p id="custom-modal-release">Release-date</p>
+        <p id="custom-modal-desc">content</p>
+    </div>
+</div>
+<header class="p-3 text-bg-dark">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                <button class="search-btn">검색</button>
+            </form>
+        </div>
+    </div>
+</header>
+<main id="movie-container">
+    <div class="row row-cols-1 row-cols-md-4 g-4"></div>
+</main>
+<footer id="footer">
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item-prev">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a id="page-link-1" class="page-link" href="#">1</a></li>
+            <li class="page-item">
+                <a id="page-link-2" class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a id="page-link-3" class="page-link" href="#">3</a></li>
+            <li class="page-item"><a id="page-link-4" class="page-link" href="#">4</a></li>
+            <li class="page-item"><a id="page-link-5" class="page-link" href="#">5</a></li>
+            <li class="page-item-next">
+                <a id="page-link" class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="page-search">
+        <input type="number" id="page-input" min="1" placeholder="페이지 번호 입력">
+        <button id="page-go">이동</button>
+    </div>
+</footer>
+<script src="api/api.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/render.js"></script>
+<script src="js/pagination.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/loadMovies.js"></script>
+<script src="js/movieSearch.js"></script>
+<script src="js/pageSearch.js"></script>
+</body>
+</html>
