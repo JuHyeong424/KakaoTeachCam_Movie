@@ -1,8 +1,8 @@
 깃허브 페이지
 https://juhyeong424.github.io/KakaoTeachCam_Movie/
 
-API_KEY는 현재까지 배운 내용에서 .env를 사용하지 못하여 public으로 두었습니다.
-
+API_KEY는 현재까지 배운 내용에서 .env를 사용하지 못하여 public으로 두었습니다. 
+혹시 다른 방법이 있다면 알려주시면 바로 적용하겠습니다.
 
 1. Home 클릭시
    - 기본으로 제공하는 페이지의 1페이지로 이동한다.
