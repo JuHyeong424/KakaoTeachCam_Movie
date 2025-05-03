@@ -1,4 +1,3 @@
-import {API_KEY} from "/api/api.js"
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 const API_BASE_URL = 'https://api.themoviedb.org/3/movie';
 let MAX_PAGE = 500
