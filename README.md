@@ -9,15 +9,15 @@
 
 <h2>기능</h2>
 <h3>메인 페이지</h3>
-<img src="./img.png>
+<img src="./img.png">
 <h3>한국어 검색</h3>
-<img src="./img_1.png>
+<img src="./img_1.png">
 <h3>영어 검색</h3>
-<img src="./img_2.png>
+<img src="./img_2.png">
 <h3>영화 상세 보기</h3>
-<img src="./img_3.png>
+<img src="./img_3.png">
 <h3>페이지 검색</h3>
-<img src="./img_4.png>
+<img src="./img_4.png">
 <p>
 영화 검색을 하면 제목에 해당 검색어가 포함되어 있는 모든 제목을 보여줍니다.<br>
 영화 정보 제공이 영어로 되어 있지만 한글로 검색해도 해당 영화가 검색됩니다.<br>
